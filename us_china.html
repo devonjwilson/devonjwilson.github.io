@@ -1,15 +1,40 @@
-{% extends "idglobal/layout.html" %}
-{% load static %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block body %}
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Interdisciplinary & Global Studies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Link to CSS Stylesheet-->
+    <link href="static/styles.css" rel="stylesheet">
+    
+    <!--This is where the NAV BAR starts - separated into columns to space out two icons. Ended up going with img-fluid and min formating for the images-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
+      <div class="container">
+        <div class = "row justify-content-between">
+          <div class = "col-4 col-lg-4">
+            <a href= "index.html">
+              <img class="img-fluid" style="min-width: 250px" src="static/idglobal_logo.jpg" alt="">
+            </a>
+          </div>
+          <div class = "col-4 col-lg-4" >
+        <a href="#">
+              <img class="img-fluid" style="min-width: 450px; padding-top: 10px;" src="static/compass_text.jpg" alt="">
+        </a>
+          </div>
+          </div>
+      </div>
+    </nav>
+</head>
     <body>
-    <p id="STD_IMAGE" style="width: 50%;"><img src="{% static 'idglobal/US_CHINA_MAIN2.jpg' %}" class="img-fluid alt=" Responsive image"></p>
+    <p id="STD_IMAGE" style="width: 45%;"><img src="static/US_CHINA_MAIN2.jpg" class="img-fluid alt=" Responsive image"></p>
     <br>
-    <a style="font-size: small;"> Seeks to ensure that young people grow up understanding migration as a shared condition of our past, present, and future in order to develop the knowledge, empathy and mindsets that sustain inclusive and welcoming communities.</a>
+    <a style="font-size: x-large;"> Working closely with teachers and academic coordinators in schools in Guangzhou, GuiYang, Qingdao and  Shenzhen, the Educating Global Citizens through a US and China Lens project seeks:  (a) to advance participating Weiming teacher’s practical capacity to teach for global competence through the use of global thinking routines; and  (b) to understand how global thinking routines employed at the intersection of Chinese and Western pedagogical traditions contribute to teachers’ capacity to teach for global competence and to the development of students’ global competence.</a>
     <br>
     <p style = "clear:left;">
-    <a style = "margin-top: 20px; margin-bottom: 5px; color: rgb(89, 152, 116); font-size: 15px;">Related Resources:</a>
+    <a style = "margin-top: 20px; margin-bottom: 5px; color: rgb(89, 152, 116); font-size: x-large;">Related Resources:</a>
     </p>
-    <a style = "font-size: 12px;" href="{% static 'idglobal/Mindfulness_Tasks.pdf' %}" download>Mindfulness Test</a> 
+    <a style = "font-size: large;" href="{% static 'idglobal/Mindfulness_Tasks.pdf' %}" download>Mindfulness Test</a> 
     </body>
-{% endblock %}
