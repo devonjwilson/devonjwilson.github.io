@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Interdisciplinary & Global Studies</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!--Link to CSS Stylesheet-->
+        <link href="{% static 'idglobal/styles.css' %}" rel="stylesheet">
+        
+        <!--This is where the NAV BAR starts - separated into columns to space out two icons. Ended up going with img-fluid and min formating for the images-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
+          <div class="container">
+            <div class = "row justify-content-between">
+              <div class = "col-4 col-lg-4">
+                <a href="{% url 'index' %}">
+                  <img class="img-fluid" style="min-width: 80px" src="{% static 'idglobal/idglobal_logo.jpg' %}" alt="">
+              </a>
+              </div>
+              <div class = "col-5 col-lg-4" >
+            <a href="{% url 'definition' %}">
+                  <img class="img-fluid" style="min-width: 80px; padding-top: 5px;" src="{% static 'idglobal/compass_text.jpg' %}" alt="">
+            </a>
+              </div>
+              </div>
+          </div>
+        </nav>
+        
+    
+    </head>
+    <!--link to JAVASCRIP File-->
+    <body>        
+        <div class="body">
+        <!--Where the actual individual text comes in-->
+
+          <!--Top general definition of project-->
+          <p style = "padding-top: 5px; font-size: small; text-align: center;" >Preparing youth to understand pressing global issues and participate as responsible global citizens. 
+          </p> 
+          <!--Projects Section with scroll bar-->
+          <div id="ABC" style ="font-size: small; color: white;"> Projects and Research Threads </div>
+          <div class="container testimonial-group">
+              <div class="row text-center">
+                <a href="{% url 'reimagining' %}" style="margin-right:20px; padding: 5px;" class="col-xs-4" ><img width = 150px src="{% static 'idglobal/Reimagining_migration.jpg' %}" alt=""></a><!--
+             --><a href="{% url 'global_children' %}" style="margin-right:20px; padding: 5px;" class="col-xs-4"><img width = 150px src="{% static 'idglobal/Global_Children.jpg' %}" alt=""></a><!--
+             --><a href="{% url 'us_china' %}" style="margin-right:20px; padding: 5px;" class="col-xs-4"><img width = 140px src="{% static 'idglobal/US_CHINA_LENS.jpg' %}" alt=""></a><!--
+             --><a href="{% url 'environmental_stew' %}" style="margin-right:20px; padding: 5px;" class="col-xs-4"><img width = 130px src="{% static 'idglobal/ENVIRONMENTAL_STEW.jpg' %}" alt=""></a>
+              </div>
+            </div>
+            <p></p>
+  
+            <!--Resource for Educators with scroll bar different CSS ID for colloring-->
+            <div id="XYZ" style ="font-size: small; color: white;"> Resources for Educators </div>
+            <div class="container testimonial-group">
+                <div class="row text-center">
+                  <a href="{% url 'gtr' %}" style="margin-right:20px; padding: 5px;" class="col-xs-4" ><img width = 150px src="{% static 'idglobal/THINKING_ROUTINES.jpg' %}" alt=""></a><!--
+               --><a href="{% url 'curriculum' %}" style="margin-right:20px; padding: 5px;" class="col-xs-4"><img width = 130px src="{% static 'idglobal/CURRICULUM.jpg' %}" alt=""></a><!--
+               --><a href="{% url 'sig_ped' %}" style="margin-right:20px; padding: 5px;" class="col-xs-4"><img width = 150px src="{% static 'idglobal/SIG_PED.jpg' %}" alt=""></a><!--
+               --><a href="{% url 'books' %}" style="margin-right:20px; padding: 5px;" class="col-xs-4"><img width = 125px src="{% static 'idglobal/books.jpg' %}" alt=""></a>
+                </div>
+              </div>
+   
+    </body>
+</html>
