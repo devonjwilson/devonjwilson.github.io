@@ -1,9 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Search</title>
-        <link href="styles.css" rel="stylesheet">
-    </head>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Interdisciplinary & Global Studies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Link to CSS Stylesheet-->
+    <link href="{% static 'idglobal/styles.css' %}" rel="stylesheet">
+    
+    <!--This is where the NAV BAR starts - separated into columns to space out two icons. Ended up going with img-fluid and min formating for the images-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
+      <div class="container">
+        <div class = "row justify-content-between">
+          <div class = "col-4 col-lg-4">
+            <a href= "#">
+              <img class="img-fluid" style="min-width: 80px" src="static/idglobal_logo.jpg" alt="">
+              <img src="static/Books.jpg" alt="Picture of books">
+            </a>
+          </div>
+          <div class = "col-5 col-lg-4" >
+        <a href="#">
+              <img class="img-fluid" style="min-width: 80px; padding-top: 5px;" src="static/compass_text.jpg" alt="">
+        </a>
+          </div>
+          </div>
+      </div>
+    </nav>
+    
+
+</head>
+
+
+
+
     <body class="center">
         <div id="nav">
             <a href="images.html">Images</a>
